@@ -113,6 +113,60 @@
                 font-size: 16px; /* Prevents iOS zoom on focus */
             }
         }
+	  <style>
+    :root {
+        --soap-teal: #55c1c1;
+        --soap-teal-light: #a8e0e0;
+        --soap-teal-pale: #d5f1f1;
+        --soap-grey: #f0f0f0;
+        --soap-grey-dark: #d0d0d0;
+    }
+    /* ... all your existing CSS ... */
+    
+    /* Mobile optimizations */
+    @media (max-width: 640px) {
+        .tabs-container {
+            flex-direction: column;
+        }
+        .tab {
+            width: 100%;
+            border-radius: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+        .tab-content {
+            border-radius: 0.25rem;
+            margin-top: 0.5rem;
+        }
+        input, select {
+            font-size: 16px; /* Prevents iOS zoom on focus */
+        }
+    }
+    
+    /* ADD NEW STYLES HERE */
+    .promo-image-container {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .promo-image {
+        max-width: 90%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    #logo {
+        max-height: 60px;
+        width: auto;
+    }
+
+    @media (max-width: 768px) {
+        #logo {
+            max-height: 50px;
+        }
+    }
+</style>
+  
     </style>
 <style type="text/css">
 @font-face {
@@ -159,7 +213,7 @@
             <!-- Logo container -->
             <div id="logo-container" class="mb-4 md:mb-0">
                 <!-- Replace with your actual logo -->
-                <img id="logo" src="https://cdn.prod.website-files.com/64b0356a85ecff3f406c53e7/64b0f8e637cf68ca9ce59b6d_Soap%20School%20Logo%20Colour.webp" alt="Soap School Logo" class="h-20 md:h-24">
+                <img id="logo" src="https://cdn.prod.website-files.com/64b0356a85ecff3f406c53e7/64b0f8e637cf68ca9ce59b6d_Soap%20School%20Logo%20Colour.webp" alt="Soap School Logo" class="h-12 md:h-16">
             </div>
             
             <!-- Home button -->
@@ -291,7 +345,7 @@
         </div>
         
         <!-- Promotional Area -->
-<div id="promotional-area" class="mt-10 p-6 soap-primary-pale rounded-lg">
+<div id="promotional-area" class="mt-16 p-8 soap-primary-pale rounded-lg">
     <h2 class="text-2xl font-bold mb-3 soap-text">Enhance Your Soap Making Skills</h2>
     <p class="mb-4">Take your formulation knowledge to the next level with our professional courses.</p>
     <div class="flex flex-wrap gap-4">
@@ -300,7 +354,7 @@
     </div>
     
     <!-- Add your optimized image here -->
-    <div class="promo-image-container mt-6">
+    <div class="promo-image-container mt-10">
         <img src="https://cdn.prod.website-files.com/64b0356a85ecff3f406c53e7/64bf846d13f155ec418b2cad_7_day_gallery_pics.webp" alt="Soap School Promotion" class="promo-image max-w-full h-auto rounded-lg">
     </div>
 </div>
