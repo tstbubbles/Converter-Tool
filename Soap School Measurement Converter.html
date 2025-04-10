@@ -165,6 +165,38 @@
             max-height: 50px;
         }
     }
+	    .input-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px; /* Limits the width of the container */
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .input-group input[type="number"] {
+        max-width: 200px; /* Limits the width of number inputs */
+        width: 100%;
+    }
+
+    /* Make sure select dropdowns match */
+    .input-group select {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    /* For results display */
+    #weight-result, #volume-result, #temperature-result {
+        font-weight: bold;
+        max-width: 400px;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        background-color: var(--soap-grey);
+        border-radius: 0.25rem;
+    }
 </style>
   
     </style>
